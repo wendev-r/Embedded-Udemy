@@ -17,18 +17,16 @@
  */
 
 #include <stdint.h>
-#include <stdio.h>
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
-
-
+int g_data1 = -4000;
+int g_data2 = 200;
+int result = 0;
 int main(void)
 {
+	result = g_data1+g_data2;
     /* Loop forever */
-	unsigned int d = sizeof(char);
-	unsigned int d2 = sizeof(short);
-
 	for(;;);
 }
