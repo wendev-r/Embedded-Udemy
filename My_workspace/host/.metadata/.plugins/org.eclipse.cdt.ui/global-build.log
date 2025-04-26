@@ -1,5 +1,5 @@
-21:57:38 **** Incremental Build of configuration Debug for project pointer3 ****
+14:35:55 **** Incremental Build of configuration Debug for project bitwise2Number ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o pointer3.exe main.o 
-Info: Nothing to build for pointer3
+gcc -o bitwise2Number.exe main.o 
+Info: Nothing to build for bitwise2Number

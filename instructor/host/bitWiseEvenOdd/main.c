@@ -8,6 +8,8 @@ void wait_for_user_input(void);
 
 int main(void)
 {
+    printf(0&1);
+
 	int32_t num1;
 	printf("Enter a number:");
 	scanf("%d",&num1);
