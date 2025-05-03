@@ -26,7 +26,7 @@
  * Procedure to turn on the LED:
  * 1) Identify GPIO port used to connect the led (GPIO A for nucleo c0)
  * 2) Identify the GPIO pin where the LED is connected (PA5)
- * 3) Activate or turn on the GPIOA peripheral (enable the clock)
+ * 3) Activate or turn on the GPIOA peripheral (enable the clock, RCC)
  * 4) Configure the GPIO pin mode as output
  * 5) Write to the pin
  */

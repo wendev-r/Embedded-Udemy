@@ -1,5 +1,9 @@
-14:35:55 **** Incremental Build of configuration Debug for project bitwise2Number ****
+18:59:53 **** Incremental Build of configuration Debug for project structIntTest ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o bitwise2Number.exe main.o 
-Info: Nothing to build for bitwise2Number
+..\main.c: In function 'main':
+..\main.c:25:18: warning: unused variable 'carHonda' [-Wunused-variable]
+   25 |  struct carModel carHonda= {.carNumber = 3000, .carPrice = 20, .carMaxSpeed= 30,.carWeight = 1300};
+      |                  ^~~~~~~~
+gcc -o structIntTest.exe main.o 
+Info: Nothing to build for structIntTest
