@@ -1,9 +1,19 @@
-18:59:53 **** Incremental Build of configuration Debug for project structIntTest ****
+11:22:23 **** Incremental Build of configuration Debug for project unionBitExtraction1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c: In function 'main':
-..\main.c:25:18: warning: unused variable 'carHonda' [-Wunused-variable]
-   25 |  struct carModel carHonda= {.carNumber = 3000, .carPrice = 20, .carMaxSpeed= 30,.carWeight = 1300};
-      |                  ^~~~~~~~
-gcc -o structIntTest.exe main.o 
-Info: Nothing to build for structIntTest
+..\main.c:46:34: warning: format '%I64u' expects argument of type 'long long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   46 |    printf("Size of struct is %I64u\n",sizeof(packet));
+      |                              ~~~~^    ~~~~~~~~~~~~~~
+      |                                  |    |
+      |                                  |    unsigned int
+      |                                  long long unsigned int
+      |                              %u
+..\main.c:46:34: warning: format '%I64u' expects argument of type 'long long unsigned int', but argument 2 has type 'unsigned int' [-Wformat=]
+   46 |    printf("Size of struct is %I64u\n",sizeof(packet));
+      |                              ~~~~^    ~~~~~~~~~~~~~~
+      |                                  |    |
+      |                                  |    unsigned int
+      |                                  long long unsigned int
+      |                              %u
+gcc -o unionBitExtraction1.exe main.o 
